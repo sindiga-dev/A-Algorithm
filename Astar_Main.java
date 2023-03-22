@@ -8,7 +8,7 @@
      public static int row=15;
      public static int col=15;
      //number of columns
-     public static int [][] mainboard = new int [row][col]; //this will hold the main board
+     public static int [][] mainboard = new int [row][col]; //main board
      public static Node [][] node = new Node[row][col];
      public static Node start;
      public static Node goal;
@@ -19,8 +19,8 @@
          As.set10percent(mainboard);
          As.writeToNode(mainboard, node);
  
-         start=As.getStart(node);//gets the start node
-         goal=As.getGoal(node);//gets the goal node
+         start=As.getStart(node);// start node
+         goal=As.getGoal(node);//goal node
  
          As.getHeuristic(node, goal);
          As.displayNode(node);
